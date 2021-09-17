@@ -6,7 +6,8 @@ phases:
       java: corretto11
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo Hi Harish
+      - apt install apache2
   build:
     commands:
       - echo Build started on `date`
