@@ -3,10 +3,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - apt-get update -y
-      - apt-get install nodejs -y
-      - apt-get install nodejs-dev node-gyp libssl1.0-dev -y
-      - apt-get install npm -y
+      - yum update -y
+      - yum install nodejs -y
+      - yum install nodejs-dev node-gyp libssl1.0-dev -y
+      - yum install npm -y
   build:
     commands:
       - echo Build started on `date`
@@ -16,7 +16,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-    - appspec.yml
 cache:
   paths:
     - '/root/.m2/**/*'
