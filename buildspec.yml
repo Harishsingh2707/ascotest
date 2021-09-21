@@ -4,8 +4,8 @@ phases:
   pre_build:
     commands:
       - apt-get update -y
-      - apt-get nodejs 
-      - apt install npm 
+      - apt-get install nodejs -y
+      - apt-get install npm -y
   build:
     commands:
       - echo Build started on `date`
