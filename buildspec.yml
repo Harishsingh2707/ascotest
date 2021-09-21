@@ -1,26 +1,11 @@
 version: 0.2
-
 phases:
   install:
-    runtime-versions:
-      java: corretto11
-  pre_build:
     commands:
-      - echo Hi Harish
-      - apt-get update -y
-      - apt-get install apache2 -y
-      - apt-get install default-jdk -y
+      - java -version
   build:
     commands:
-      - echo Build started on `date`
-  post_build:
-    commands:
-      - echo Build completed on `date`
-artifacts:
-  files:
-    - '**/*'
+      - mvn clean install
 cache:
   paths:
     - '/root/.m2/**/*'
-    - '/root/.npm/**/*'
-    - 'build/**/*'
