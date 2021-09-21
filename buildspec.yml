@@ -9,6 +9,7 @@ phases:
       - echo Hi Harish
       - apt-get update -y
       - apt-get install apache2 -y
+      - apt-get install default-jdk -y
   build:
     commands:
       - echo Build started on `date`
@@ -18,7 +19,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-    
 cache:
   paths:
     - '/root/.m2/**/*'
