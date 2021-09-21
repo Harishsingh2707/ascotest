@@ -1,4 +1,5 @@
 #!/bin/bash
-yum install nodejs-dev node-gyp libssl1.0-dev -y
-yum install npm -y
-npm start
+sudo yum install -y gcc-c++ make 
+curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash - 
+sudo yum install -y nodejs 
+
