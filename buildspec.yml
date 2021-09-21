@@ -3,10 +3,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - yum update -y
-      - yum install nodejs -y
-      - yum install nodejs-dev node-gyp libssl1.0-dev -y
-      - yum install npm -y
+      - apt update -y
+      - apt install nodejs -y
+      - apt install nodejs-dev node-gyp libssl1.0-dev -y
+      - apt install npm -y
   build:
     commands:
       - echo Build started on `date`
