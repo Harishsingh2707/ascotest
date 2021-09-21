@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Hi Harish
       - apt-get update -y
-      - apt-get install apache2 -y
+      - npm install
       - apt-get install default-jdk -y
   build:
     commands:
