@@ -6,10 +6,9 @@ phases:
       java: corretto11
   pre_build:
     commands:
-      - echo Hi Harish
-      - apt-get update -y
-      - npm install
-      - apt-get install default-jdk -y
+      - sudo apt-get update -y
+      - sudo apt-get nodejs
+      - sudo apt install npm
   build:
     commands:
       - echo Build started on `date`
