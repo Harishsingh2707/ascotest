@@ -1,14 +1,11 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
   pre_build:
     commands:
-      - sudo apt-get update -y
-      - sudo apt-get nodejs -y
-      - sudo apt install npm -y
+      - apt-get update -y
+      - apt-get nodejs -y
+      - apt install npm -y
   build:
     commands:
       - echo Build started on `date`
