@@ -12,13 +12,13 @@ hooks:
   BeforeInstall:
     - location: scripts/deploy.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
 #   AfterInstall:
 #     - location: scripts/after_install.sh
 #       timeout: 300
-#       runas: ubuntu
+#       runas: ec2-user
 # During the ApplicationInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
 #   ApplicationStart:
