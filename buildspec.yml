@@ -7,7 +7,7 @@ phases:
       - apt install nodejs -y
       - apt install nodejs-dev node-gyp libssl1.0-dev -y
       - apt install npm -y
-      - npm install
+      - npm clean install
   build:
     commands:
       - echo Build started on `date`
