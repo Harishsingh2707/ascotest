@@ -29,9 +29,9 @@ jobs:
         sudo apt install nodejs -y
         sudo apt install libssl-dev -y
         sudo apt install npm -y
-        sudo npm install -g eslint
-        eslint --init
-        npm test run -- --code-coverage --no-watch --no-progress --browsers ChromeHeadlessNoSandbox
+        #sudo npm install -g eslint
+        #eslint --init
+        #npm test run -- --code-coverage --no-watch --no-progress --browsers ChromeHeadlessNoSandbox
 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@v1.3
