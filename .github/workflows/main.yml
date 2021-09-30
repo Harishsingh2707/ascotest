@@ -23,8 +23,11 @@ jobs:
       with:
         node-version: '15'
 
-#     - name: Node install dependencies
-#       run: npm install
+    - name: Node install dependencies
+      run: apt update -y
+      run: apt install nodejs -y
+      run: apt install libssl-dev -y
+      run: apt install npm -y
 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@v1.3
