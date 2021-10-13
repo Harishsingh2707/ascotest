@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - apt update -y
+      - apt update -z
       - apt upgrade -y
       - apt install nodejs -y
       - apt install libssl-dev -y
